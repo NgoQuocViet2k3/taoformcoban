@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản - Part 2/2</title>
+    <style>
+        .myTable{
+            background-color: #F9E491;
+        }
+        .myTittle {
+            font-size:150%
+            text-align: left;
+            background-color:#4CD3DC;
+            color:white
+        }
+        .myHeaders {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <table class="myTable">
+        <tr>
+            <td colspan="6" class="myTittle"> ĐĂNG KÝ HỌC VIÊN </td>
+        </tr>
+        <tr>
+            <td class="myHeaders">Họ và tên</td>
+            <td colspan="2"><input name="fullname" type="text" size=30" required></td>
+        </tr>
+        <tr>
+            <td class="myHeaders">Ngày sinh</td>
+            <td colspan="2"><input name="birthday" type="text" size=14" required="true"></td>
+        </tr>
+        <tr>
+            <td class="myHeaders">Giới tính</td>
+            <td><input type="radio" name="sex" id="sex-male" value="male" checked="true">
+                <label for="sex-male">Nam</label>
+                <input type="radio" name="sex" id="sex-female" value="female">
+                <label for="sex-female">Nữ</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="myHeaders">Địa chỉ</td>
+            <td><textarea name="address" cols="36" rows="4" aria-required="true"> </textarea></td>
+        </tr>
+        <tr>
+            <td class="myHeaders">Lớp</td>
+            <td><select name="course" id="course">
+                <option value="Java">Khóa học Java</option>
+                <option value="PHP">Khóa học PHP</option>
+                <option value=".Net-Core">Khóa học .Net Core</option>
+                <option selected value="notSelected">-- Chọn lớp --</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="myHeaders">Email</td>
+            <td colspan="2"><input name="email" type="text" size=24" required></td>
+        </tr>
+        <tr>
+            <td class="myHeaders">Điện thoại</td>
+            <td colspan="2"><input name="phone" type="text" size=24" required></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Đăng ký">
+                <input type="reset" value="Nhập lại"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
